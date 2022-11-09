@@ -1,0 +1,70 @@
+.star {
+    /* size */
+    width: 20%;
+    height: 100%;
+  
+    /* appearance */
+    clip-path: polygon(
+      50% 0,
+      65% 30%,
+      97% 37%,
+      73% 60%,
+      80% 95%,
+      50% 77%,
+      20% 95%,
+      27% 60%,
+      3% 37%,
+      35% 30%
+    );
+    background-color: rgb(54,53,53);
+  }
+  
+  .star .fill,
+  .star .half-fill {
+      clip-path: polygon(
+        50% 0,
+        65% 30%,
+        97% 37%,
+        73% 60%,
+        80% 95%,
+        50% 77%,
+        20% 95%,
+        27% 60%,
+        3% 37%,
+        35% 30%
+      );
+      background-color: white;
+      width: 70%;
+      height: 70%;
+      top: 15%;
+      left: 15%;
+      position: relative;
+  }
+
+  .star .fill::after,
+  .star .half-fill::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .star .fill::after {
+    /* animation: fill 3s ease-in-out forwards; */
+  }
+  
+  .star .half-fill::after {
+    /* animation: halfFill 3s ease-in-out forwards; */
+  }
+  
+  @keyframes fill {
+    0% {
+      transform: translateX(-100%);
+      background-color: rgba(195, 180, 230);
+    }
+    100% {
+      transform: translateX(0%);
+      background-color: rgb(117, 101, 165);
+    }
+  }

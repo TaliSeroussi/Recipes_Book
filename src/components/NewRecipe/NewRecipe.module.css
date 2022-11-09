@@ -1,0 +1,68 @@
+.note {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../../assets/media/NewRecipe.png");
+    height: 480px;
+    padding-top: 125px;
+    width: 384px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-1.5deg);
+}
+
+.addRecipeButton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+  border-color: rgb(117, 101, 165);
+  border-style: solid;
+  border-width: 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form, .loading {
+  width: 75%;
+  position: relative;
+  margin:auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+}
+
+.form label{
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.time-continer {
+  display: flex;
+  justify-content: right;
+}
+
+.form-actions button {
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(217, 210, 233);
+    border-color: rgb(117, 101, 165);
+    border-radius: 14px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
+
+.form-actions button:disabled,
+.form-actions button[disabled] {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid #ccc;
+}

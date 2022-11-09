@@ -1,0 +1,87 @@
+.trash-can {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+}
+
+.delete-tab {
+  background-image: url("../../../../../assets/media/deleteNote.png");
+  width: 285px;
+  height: 300px;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  text-align: center;
+  transform: rotate(-5deg);
+  left: -400px;
+  top: 150px;
+  animation: pop 0.5s forwards;
+}
+
+.delete-tab p {
+  position: relative;
+  margin: auto;
+  font-size: 50px;
+  margin-top: 55px;
+  width: 285px;
+}
+
+.delete-tab button {
+  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  color: white;
+
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.yes {
+  background-color: rgb(117, 101, 165);
+  border-width: 0px;
+  margin-left: 5px;
+}
+
+.yes:hover {
+  background-color: rgb(95, 82, 134);
+}
+
+.no {
+  background-color: rgb(80, 69, 112);
+  border-style: solid;
+  border-color: rgb(49, 42, 69);
+  margin-right: 5px;
+}
+
+.no:hover {
+  background-color: rgb(68, 59, 95);
+}
+.stick {
+  background-image: url("../../../../../assets/media/stick.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 91px;
+  position: absolute;
+  left: -318px;
+  top: 140px;
+  z-index: 2;
+}
+
+@keyframes pop {
+  0% {
+    top: 75px;
+    left: -471.25px;
+    width: 427.5px;
+    height: 450px;
+  }
+  100% {
+    top: 150px;
+    left: -400px;
+    width: 285px;
+    height: 300px;
+  }
+}

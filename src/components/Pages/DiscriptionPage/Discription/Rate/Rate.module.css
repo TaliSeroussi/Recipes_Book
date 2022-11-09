@@ -1,0 +1,12 @@
+.stars-container {
+    /* size */
+    width: 80px;
+    height: 17px;
+    direction: ltr;
+  
+    /* position */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    cursor: auto;
+  }

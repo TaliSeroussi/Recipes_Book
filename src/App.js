@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Book from "./components/Book/Book";
+import NewRecipe from "./components/NewRecipe/NewRecipe";
+import React, { useCallback, useContext, useEffect } from "react";
+import BookContext from "./context/Context";
+import useFetch from "./hooks/useFetch"
 
-function App() {
+const App = () => {
+  const BookPages = useContext(BookContext);
+  const getBookHandler = useCallback(async (data) => {
+    const loadedRecipes = [];
+    BookPages.ArrTypes.map((Type) => {
+      for (const Recipe in data[Type]) {
+        loadedRecipes.push({
+          key: Recipe, ...data[Type][Recipe] 
+      });
+      }
+    });
+    BookPages.setArrPages(loadedRecipes);
+  }, []);
+  const [isLoading, error, fetchRecipes] = useFetch("GET", getBookHandler);
+
+  useEffect(() => {
+    fetchRecipes("https://recipes-book-1a026-default-rtdb.firebaseio.com/pages.json");
+  }, [fetchRecipes]);
+
+  let content = <Book BookPages={BookPages.ArrPages}></Book>;
+
+  if (error) {
+    content = <><p className="loading-content purple">אוי לא! משהו השתבש באחד השלבים...</p><button onClick={fetchRecipes}>נסו שוב</button></>;
+  }
+
+  if (isLoading) {
+    content = <p className="loading-content purple">חכו רגע! משהו מתבשל כאן...</p>;
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {content}
+      <NewRecipe></NewRecipe>
+    </>
   );
-}
+};
 
 export default App;

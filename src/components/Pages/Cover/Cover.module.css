@@ -1,0 +1,56 @@
+.page-cover {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 85%;
+  padding-top: 20%;
+}
+
+.page-cover.front {
+  background-image: url("../../../../assets/media/frontBG.png");
+}
+
+.page-cover.back {
+  background-image: url("../../../../assets/media/backBG.png");
+}
+
+.page-cover.page-cover-bottom {
+  box-shadow: inset 0 0 30px 0 rgb(36 10 3 / 50%), 10px 0 8px 0 rgb(0 0 0 / 40%);
+}
+
+.text {
+  background-image: url("../../../../assets/media/sticker.png");
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 16vw;
+  height: 21vh;
+  font-size: 3.5vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 6%;
+  line-height: 75%;
+}
+
+.writer {
+  background-image: url("../../../../assets/media/purpleStickyNote.png");
+  text-align: center;
+  position: relative;
+  margin-top: 16%;
+  margin-right: 6vw;
+  transform: rotate(9deg);
+  width: 162px;
+  height: 180px;
+  font-size: 36px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 56px;
+  line-height: 75%;
+}
+
+.back .page-content {
+  display: none;
+}

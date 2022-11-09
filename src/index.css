@@ -1,13 +1,45 @@
+@font-face {
+  font-family: nehama;
+  src: url("../assets/fonts/nehama-webfont.ttf"), url("../assets/fonts/nehama-webfont.eot");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-image: url("../assets/media/tableBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  direction: rtl;
+  color: rgb(54,53,53);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.purple {
+  color: rgb(117, 101, 165);
+}
+
+button {
+  font-family: nehama;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 101, 165);
+  border: 1px solid rgb(117, 101, 165);
 }

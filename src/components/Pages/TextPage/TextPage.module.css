@@ -1,0 +1,21 @@
+.firstPage {
+  background-image: url("../../../../assets/media/firstPage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text {
+  width: 56% !important;
+  padding-top: 35px !important;
+  padding-left: 30px;
+}
+
+.note {
+  transform: rotate(6deg);
+  width: 121px;
+  height: 80px;
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+  bottom: 77px;
+}

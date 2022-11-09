@@ -1,0 +1,49 @@
+.image-frame {
+    background-image: url("../../../../../assets/media/image.png");
+    position: absolute;
+    width: 200px;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-right: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    transform: rotate(6deg);
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .details-container {
+      width: 200px;
+      margin-top: 54px;
+      margin-right: 260px;
+      position: absolute;
+  }
+  
+  .title {
+    font-size: 3vw;
+    width: 100%;
+    margin-bottom: 7px
+  }
+  
+  .details,
+  .details-title {
+    font-size: 1.5vw;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+  
+  .details-title {
+    background-color: rgba(195, 180, 230, 0.515);
+  }
+  
+  .details {
+    margin-right: 10px;
+  }

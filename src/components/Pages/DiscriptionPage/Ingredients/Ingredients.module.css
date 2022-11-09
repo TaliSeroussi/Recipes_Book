@@ -1,0 +1,42 @@
+.title {
+    top: 335px;
+}
+
+.checkbox {
+    background-image: url("../../../../../assets/media/checkboxEmpty.png");
+    position: relative;
+    width: 10px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+.ingredients-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 320px !important;
+    flex-flow: wrap;
+}
+
+.ingredient-container {
+    width: auto;
+    height: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.ingredient-container img {
+    height: 15px;
+    margin-top: -5px;
+}
+
+.ingredient-container p{
+    width: auto;
+}
