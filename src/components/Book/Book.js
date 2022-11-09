@@ -9,6 +9,8 @@ import "./Book.css";
 import HTMLFlipBook from "react-pageflip";
 
 const Book = (props) => {
+  const height = window.innerHeight/1.2;
+  const width = height/1.27
   const BookRef = useRef();
   const ArrComponents = {
     Cover: Cover,
@@ -48,12 +50,14 @@ const Book = (props) => {
     <HTMLFlipBook
       ref={BookRef}
       className="flip-book"
-      width={315}
-      height={400}
+      width={width}
+      height={height}
       showCover={true}
       size={"stretch"}
-      maxWidth={500}
-      maxHeight={400}
+      // minWidth={315}
+      // minHeight={400}
+      maxWidth={width}
+      maxHeight={height}
       maxShadowOpacity={0.5}
       onInit={openingPage}
       onFlip={closingPage}
