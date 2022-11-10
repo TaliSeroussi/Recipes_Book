@@ -37,6 +37,8 @@ const App = () => {
     <>
       {content}
       <NewRecipe></NewRecipe>
+      <div id="marker"></div>
+      <div id="pen"></div>
     </>
   );
 };

@@ -1,25 +1,26 @@
 @font-face {
   font-family: nehama;
-  src: url("../assets/fonts/nehama-webfont.ttf"), url("../assets/fonts/nehama-webfont.eot");
+  src: url("../assets/fonts/nehama-webfont.ttf"),
+    url("../assets/fonts/nehama-webfont.eot");
 }
 
 body {
   margin: 0;
-  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   background-image: url("../assets/media/tableBG.jpg");
   background-size: auto;
   background-repeat-x: repeat;
-  background-repeat-y: no-repeat;;
+  background-repeat-y: no-repeat;
   direction: rtl;
-  color: rgb(54,53,53);
+  color: rgb(54, 53, 53);
 }
 
 code {
-  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: nehama, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -34,13 +35,31 @@ button {
 ::-webkit-scrollbar {
   width: 5px;
 }
- 
+
 ::-webkit-scrollbar-track {
   background-color: rgb(218, 218, 218);
   border: 1px solid transparent;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background-color: rgb(117, 101, 165);
   border: 1px solid rgb(117, 101, 165);
+}
+
+#marker,
+#pen {
+  background-size: cover;
+}
+
+#marker {
+  background-image: url("../assets/media/marker.png");
+  width: 258px;
+  height: 270px;
+}
+
+#pen {
+  background-image: url("../assets/media/pen.png");
+  width: 150px;
+  height: 417px;
+  margin-top: 62px;
 }
