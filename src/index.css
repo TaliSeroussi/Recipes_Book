@@ -11,8 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   background-image: url("../assets/media/tableBG.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;;
   direction: rtl;
   color: rgb(54,53,53);
 }
