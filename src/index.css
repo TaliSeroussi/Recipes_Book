@@ -49,6 +49,7 @@ button {
 #marker,
 #pen {
   background-size: cover;
+  z-index: 1;
 }
 
 #marker {
@@ -59,7 +60,9 @@ button {
 
 #pen {
   background-image: url("../assets/media/pen.png");
-  width: 150px;
-  height: 417px;
-  margin-top: 62px;
+  height: 500px;
+  position: absolute;
+  bottom: -50px;
+  right: 120px;
+  width: 170px;
 }
